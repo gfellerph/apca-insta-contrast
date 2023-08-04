@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-color, black);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.picker {
+  appearance: none;
+  display: block;
+  width: auto;
+  height: auto;
+  position: fixed;
+  inset: 20%;
+
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}

@@ -10,7 +10,6 @@ const setColor = (header: HTMLHeadingElement, input: HTMLInputElement) => {
   const yBgColor = sRGBtoY(colorParsley(bgColor));
   const whiteContrast = Math.abs(APCAcontrast(whiteY, yBgColor) as number);
   const blackContrast = Math.abs(APCAcontrast(blackY, yBgColor) as number);
-  console.log(whiteContrast, blackContrast);
   header.style.setProperty(
     "--text-color",
     whiteContrast > blackContrast ? "white" : "black"
